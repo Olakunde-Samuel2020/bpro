@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #f0f2f5; */
+    background-image:url(/asset/bg.png);
+    background-size:cover;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+    background: #e0e0e0;
+}
+
+.name {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    text-align: center;
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    color: #2d3748;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    color: #4a5568;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.social-link:hover {
+    background-color: #f0f2f5;
+}
+
+.time {
+    text-align: center;
+    margin-top: 1rem;
+    color: #718096;
+    font-size: 0.875rem;
+}
+@media (max-width: 320px) {
+.card {
+padding: 1.5rem;
+}
+.profile-image {
+width: 120px;
+height: 120px;
+}
+.name {
+font-size: 1.2rem;
+}
+.job-title {
+font-size: 1rem;
+}
+}
